@@ -46,3 +46,21 @@ Remove all unused images
 docker image prune
 ```
 
+
+# DOCKER HUB
+
+
+
+# DOCKER 
+List all the current running docker container
+
+```
+docker ps
+```
+
+List all docker running container
+```
+docker ps -a 
+```
+
+-a = all docker container (running and stopped)
