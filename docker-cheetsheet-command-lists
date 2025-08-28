@@ -1,0 +1,48 @@
+
+
+# Docker Cheetsheet or Docker Commands list
+
+## Basics  Docker Commands
+check the docker version
+
+```
+docker --version
+```
+
+Build an image from a Dockerfile the current directory
+
+```
+docker build -t <image_name> .
+```
+
+Build an image from a Dockerfile the current directory without the cache
+
+```
+docker build -t <image_name> . -no-cache
+```
+
+
+## Docker Images 
+List local docker Images
+
+```
+docker images ls
+```
+
+Delete docker Images
+```
+docker rmi <image_name>
+```
+
+Clean up docker containers, images, columns and networks 
+
+```
+docker system prune
+```
+
+Remove all unused images
+
+```
+docker image prune
+```
+
