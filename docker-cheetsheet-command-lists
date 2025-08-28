@@ -64,3 +64,24 @@ docker ps -a
 ```
 
 -a = all docker container (running and stopped)
+
+start docker daemon
+
+```
+docker -d
+```
+
+Docker Help
+```
+docker --help
+```
+
+Can also use -help for all subcommands
+
+ How ?
+
+Display Docker info
+
+```
+docker info
+```
