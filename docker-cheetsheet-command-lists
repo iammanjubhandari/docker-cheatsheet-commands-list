@@ -95,3 +95,18 @@ stop the docker container
 ```
 docker stop <container_name or id>
 ```
+
+```
+docker run -d --name <container_name> -p <host_port>:<container_port> -v <host_path>:<container_path> <image_name>
+
+```
+
+-d = detached mode (runs in backgroud)
+--name <conatiner_name> = give your container a custom name
+-p <host_port>:<conatiner_port> =  maps ports = host:container =maps a port on your host machince to a port inside the conatiner
+-it = interactive +terminal (used for debugging)
+-v <host_path>:<container_path> = mouth volume (persistent data) = mouth a host folder into conatiner
+
+Example:
+
+docker run -d --name myweb -p 8080:80 -v /data:/usr/share/nginx/html nginx
