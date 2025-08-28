@@ -5,46 +5,46 @@
 ## Basics  Docker Commands
 check the docker version
 
-```
+
 docker --version
-```
+
 
 Build an image from a Dockerfile the current directory
 
-```
+
 docker build -t <image_name> .
-```
+
 
 Build an image from a Dockerfile the current directory without the cache
 
-```
+
 docker build -t <image_name> . -no-cache
-```
+
 
 
 ## Docker Images 
 List local docker Images
 
-```
+
 docker images ls
-```
+
 
 Delete docker Images
-```
+
 docker rmi <image_name>
-```
+
 
 Clean up docker containers, images, columns and networks 
 
-```
+
 docker system prune
-```
+
 
 Remove all unused images
 
-```
+
 docker image prune
-```
+
 
 
 # DOCKER HUB
@@ -54,27 +54,27 @@ docker image prune
 # DOCKER 
 List all the current running docker container
 
-```
+
 docker ps
-```
+
 
 List all docker running container
-```
+
 docker ps -a 
-```
+
 
 -a = all docker container (running and stopped)
 
 start docker daemon
 
-```
+
 docker -d
-```
+
 
 Docker Help
-```
+
 docker --help
-```
+
 
 Can also use -help for all subcommands
 
@@ -82,24 +82,24 @@ Can also use -help for all subcommands
 
 Display Docker info
 
-```
+
 docker info
-```
+
 start the docker container 
 
-```
+
 docker start <conatiner_name or id>
-```
+
 
 stop the docker container
-```
-docker stop <container_name or id>
-```
 
-```
+docker stop <container_name or id>
+
+
+
 docker run -d --name <container_name> -p <host_port>:<container_port> -v <host_path>:<container_path> <image_name>
 
-```
+
 
 -d = detached mode (runs in backgroud)
 --name <conatiner_name> = give your container a custom name
