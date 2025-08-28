@@ -85,3 +85,13 @@ Display Docker info
 ```
 docker info
 ```
+start the docker container 
+
+```
+docker start <conatiner_name or id>
+```
+
+stop the docker container
+```
+docker stop <container_name or id>
+```
