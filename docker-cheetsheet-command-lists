@@ -166,3 +166,14 @@ docker login
 Prompts for username and password.
 Required before pushing images.
 
+## Push Image to Docker Hub
+
+docker push <dockerhub_username>/<repo_name>:<tag>
+
+docker push → Uploads image to Docker Hub.
+<dockerhub_username> → Must match your Docker Hub account.
+<repo_name>:<tag> → Image name and tag.
+
+
+Example:
+docker push manjunathb/myapp:v1
