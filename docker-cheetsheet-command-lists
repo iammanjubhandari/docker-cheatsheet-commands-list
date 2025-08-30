@@ -110,3 +110,17 @@ docker run -d --name <container_name> -p <host_port>:<container_port> -v <host_p
 Example:
 
 docker run -d --name myweb -p 8080:80 -v /data:/usr/share/nginx/html nginx
+
+
+# Logs and Debug
+
+docker logs <container> → Show logs
+
+docker logs -f <container> → Follow live logs.
+
+## Show last 100 lines only
+docker logs --tail 100 myweb
+
+## Follow logs + limit last 50 lines
+docker logs -f --tail 50 myweb
+
