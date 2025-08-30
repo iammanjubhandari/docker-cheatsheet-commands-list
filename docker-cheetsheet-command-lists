@@ -177,3 +177,15 @@ docker push → Uploads image to Docker Hub.
 
 Example:
 docker push manjunathb/myapp:v1
+
+Pull Image from Docker Hub
+docker pull <dockerhub_username>/<repo_name>:<tag>
+
+Optons: 
+docker pull → Downloads image from Docker Hub.
+
+If <tag> is not given, Docker defaults to latest.
+
+Example:
+With Tag
+docker pull manjunathb/myapp:v1
