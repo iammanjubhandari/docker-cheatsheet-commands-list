@@ -124,3 +124,8 @@ docker logs --tail 100 myweb
 ## Follow logs + limit last 50 lines
 docker logs -f --tail 50 myweb
 
+## Grep something from logs
+docker logs myweb | grep "error"
+
+## Follow logs + grep (live)
+docker logs -f myweb | grep "database"
