@@ -178,7 +178,7 @@ docker push → Uploads image to Docker Hub.
 Example:
 docker push manjunathb/myapp:v1
 
-Pull Image from Docker Hub
+## Pull Image from Docker Hub
 docker pull <dockerhub_username>/<repo_name>:<tag>
 
 Optons: 
@@ -195,11 +195,11 @@ Default Latest:
 docker pull nginx
 
 
-Run Pulled Image
+## Run Pulled Image
 docker run -d --name webapp -p 8080:80 manjunathb/myapp:v1
 
 
-Flow Summary (Smart Way)
+## Flow Summary
 
 Build → docker build -t myapp:v1 .
 Tag → docker tag myapp:v1 manjunathb/myapp:v1
