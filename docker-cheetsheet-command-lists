@@ -129,3 +129,40 @@ docker logs myweb | grep "error"
 
 ## Follow logs + grep (live)
 docker logs -f myweb | grep "database"
+
+
+docker exec -it <container> bash → Get inside running container.
+
+docker inspect <container> → Detailed info (JSON).
+
+docker stats → Show CPU/memory usage.
+
+## Tagging an Image
+
+docker tag <local_image>:<tag> <dockerhub_username>/<repo_name>:<tag>
+
+Options:
+docker tag → Command to give your image a new name/tag.
+
+<local_image>:<tag> → Your local image name and version (e.g., myapp:v1).
+
+<dockerhub_username> → Your Docker Hub username.
+
+<repo_name> → Repository name in Docker Hub.
+
+<tag> → Version or label (e.g., v1, latest).
+
+Example: 
+docker tag myapp:v1 manjunathb/myapp:v1
+
+Here:
+myapp:v1 = local image.
+manjunathb/myapp:v1 = Docker Hub repo + tag.
+
+## Login to Docker Hub
+
+docker login
+
+Prompts for username and password.
+Required before pushing images.
+
