@@ -189,3 +189,21 @@ If <tag> is not given, Docker defaults to latest.
 Example:
 With Tag
 docker pull manjunathb/myapp:v1
+
+Default Latest:
+
+docker pull nginx
+
+
+Run Pulled Image
+docker run -d --name webapp -p 8080:80 manjunathb/myapp:v1
+
+
+Flow Summary (Smart Way)
+
+Build → docker build -t myapp:v1 .
+Tag → docker tag myapp:v1 manjunathb/myapp:v1
+Login → docker login
+Push → docker push manjunathb/myapp:v1
+Pull → docker pull manjunathb/myapp:v1
+Run → docker run -d -p 8080:80 manjunathb/myapp:v1
