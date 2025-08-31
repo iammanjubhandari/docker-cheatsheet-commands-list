@@ -207,3 +207,15 @@ Login → docker login
 Push → docker push manjunathb/myapp:v1
 Pull → docker pull manjunathb/myapp:v1
 Run → docker run -d -p 8080:80 manjunathb/myapp:v1
+
+
+
+Copy file from host to container
+
+docker cp config.conf my-nginx:/etc/nginx/conf.d/
+
+
+Copy file from container to host
+
+docker cp my-nginx:/var/log/nginx/access.log ./access.log
+
