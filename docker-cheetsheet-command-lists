@@ -234,3 +234,8 @@ docker run -d --name mysql-db -v mydata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=se
 Check resource usage of containers
 
 docker stats
+
+
+Restart a container automatically if it crashes
+
+docker run -d --restart always myapp:latest
