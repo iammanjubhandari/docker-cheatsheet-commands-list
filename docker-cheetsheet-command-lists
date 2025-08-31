@@ -239,3 +239,8 @@ docker stats
 Restart a container automatically if it crashes
 
 docker run -d --restart always myapp:latest
+
+
+Check what capabilities a container has
+
+docker inspect <container_id> | grep CapAdd
