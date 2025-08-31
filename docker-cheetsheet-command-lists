@@ -219,3 +219,10 @@ Copy file from container to host
 
 docker cp my-nginx:/var/log/nginx/access.log ./access.log
 
+Tag an image
+
+docker tag myapp:1.0 mydockerhubusername/myapp:1.0
+
+Pull image from Docker Hub
+
+docker pull mydockerhubusername/myapp:1.0
