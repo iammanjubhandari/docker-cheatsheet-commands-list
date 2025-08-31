@@ -226,3 +226,6 @@ docker tag myapp:1.0 mydockerhubusername/myapp:1.0
 Pull image from Docker Hub
 
 docker pull mydockerhubusername/myapp:1.0
+
+Run container with a volume
+docker run -d --name mysql-db -v mydata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=secret mysql:8.0
