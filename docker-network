@@ -22,3 +22,9 @@ docker network prune
 Inspect a network
 
 docker network inspect <network_name>
+
+
+Connect/disconnect container to/from a network
+
+docker network connect <network_name> <container>
+docker network disconnect <network_name> <container>
