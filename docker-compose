@@ -1,0 +1,10 @@
+Start services
+
+docker-compose up -d
+
+
+Stop services
+
+docker-compose build
+
+
