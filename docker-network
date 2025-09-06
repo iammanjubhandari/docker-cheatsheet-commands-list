@@ -1,0 +1,11 @@
+Create a network
+
+docker network create --driver bridge <network_name>
+
+
+
+List all Docker networks
+
+docker network ls
+
+
