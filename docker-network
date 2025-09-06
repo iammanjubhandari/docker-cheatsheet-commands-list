@@ -17,3 +17,8 @@ docker network rm <network_name>
 Prune unused networks
 
 docker network prune
+
+
+Inspect a network
+
+docker network inspect <network_name>
