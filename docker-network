@@ -9,3 +9,11 @@ List all Docker networks
 docker network ls
 
 
+Remove a network
+
+docker network rm <network_name>
+
+
+Prune unused networks
+
+docker network prune
