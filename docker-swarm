@@ -5,3 +5,12 @@ List swarm nodes/services
 
 docker node ls
 docker service ls
+
+
+# Docker Swarm 
+
+Create/remove/scale swarm service
+
+docker service create
+docker service rm
+docker service scale <service_name>=<replica_count>
