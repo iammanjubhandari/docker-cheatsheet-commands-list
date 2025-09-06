@@ -1,0 +1,7 @@
+Initialize swarm mode
+docker swarm init
+
+List swarm nodes/services
+
+docker node ls
+docker service ls
