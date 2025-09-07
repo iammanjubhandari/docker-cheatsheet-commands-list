@@ -59,7 +59,9 @@ Restart a container:
 docker restart <container_name>
 
 
+Run a container on a specific network
 
+docker run -d --network <network_name> <image_name>
 
 
 # DOCKER HUB
