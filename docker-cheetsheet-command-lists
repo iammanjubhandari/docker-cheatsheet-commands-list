@@ -54,6 +54,14 @@ docker port <container>
 
 
 
+Restart a container:
+
+docker restart <container_name>
+
+
+
+
+
 # DOCKER HUB
 
 
