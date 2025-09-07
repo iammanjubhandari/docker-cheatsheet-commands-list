@@ -219,3 +219,6 @@ Save image to tar:
 docker save -o <file_name>.tar <image_name>
 
 
+Load image from tar:
+
+docker load -i <file_name>.tar
