@@ -211,3 +211,11 @@ docker run -d --restart always myapp:latest
 Check what capabilities a container has
 
 docker inspect <container_id> | grep CapAdd
+
+
+
+Save image to tar:
+
+docker save -o <file_name>.tar <image_name>
+
+
