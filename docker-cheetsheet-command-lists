@@ -47,6 +47,13 @@ docker image prune
 
 
 
+
+List container port mappings:
+
+docker port <container>
+
+
+
 # DOCKER HUB
 
 
